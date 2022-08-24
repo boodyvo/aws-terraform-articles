@@ -58,6 +58,6 @@ resource aws_cloudfront_distribution frontend {
   wait_for_deployment = true
 }
 
-output service_ip {
+output host_name {
   value = aws_cloudfront_distribution.frontend.domain_name
 }
